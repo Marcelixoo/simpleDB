@@ -1,0 +1,25 @@
+{
+    "name": "marcelo/mini_db",
+    "description": "An experimental micro framework to simulate an database behavior",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcelo Teixeira dos Santos",
+            "email": "marcelo.teixeira@poli.ufrj.br"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SimpleDb\\": "src",
+            "SimpleDb\\Adapter\\": "src/adapter/",
+            "SimpleDb\\Test\\": "src/tests/",
+            "SimpleDb\\Test\\Adapter\\": "src/tests/adapter/"
+        }
+    }
+}
