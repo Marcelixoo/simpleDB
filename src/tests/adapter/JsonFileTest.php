@@ -75,4 +75,13 @@ class JsonFileTest extends TestCase
 		
 		$adapter->write(array());
 	}
+
+	public function testIfReturnsAnEmptyArrayWhenContentIsBlank()
+	{
+		exec('touch /tmp/posts.json'); /*Create an empty file*/
+		
+		$data = $this->adapter->read();
+
+		$this->assertEquals(array(), $data);
+	}
 }

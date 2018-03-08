@@ -27,6 +27,8 @@ class JsonFile implements AdapterInterface
 			throw new \RuntimeException(
 				sprintf('File "%s" could not be read', $this->file)
 			);
+		} else if($contents == "") {
+			return array();
 		}
 
 		$data = json_decode($contents, true);
