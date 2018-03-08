@@ -3,7 +3,8 @@
     "description": "An experimental micro framework to simulate an database behavior",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "satooshi/php-coveralls": "dev-master"
     },
     "license": "MIT",
     "authors": [
@@ -13,7 +14,9 @@
         }
     ],
     "minimum-stability": "alpha",
-    "require": {},
+    "require": {
+        "php" : ">=5.3.3"
+    },
     "autoload": {
         "psr-4": {
             "SimpleDb\\": "src",
